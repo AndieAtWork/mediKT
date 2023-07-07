@@ -1,0 +1,179 @@
+<style>
+
+.square{
+  background-color: white;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 50px;
+}
+
+#title{
+  text-align: center;
+  color: #098484;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.session-input{
+  border-color: #0CB8B8;
+  border-radius: 7px;
+  z-index: 100;
+  position: relative;
+  width: 96%;
+}
+
+.session-input-field{
+  color: #098484;
+}
+
+.icon-holder{
+  display: inline;
+  padding-left: 13px;
+  border: 1px solid black;
+  padding-right: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: -9px;
+  background-color: #0CB8B8;
+  color: white;
+  border-radius: 7px;
+}
+
+@media (max-width: 1010px) {
+  .icon-holder{
+    display: none;
+  }
+  .session-input{
+    width: 100%;
+  }
+}
+
+.title-image{
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  margin-top: 30px;
+}
+
+.form-button{
+  margin-top: 20px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.enter-button{
+  background-color: #0CB8B8;
+  color: white;
+}
+
+.enter-button:hover{
+  background-color: #098484;
+  color: white;
+  transition: 0.4s;
+}
+
+.crear-button{
+  background-color: #CD3301;
+  color: white;
+}
+
+.crear-button:hover{
+  background-color: #9A2701;
+  color: white;
+  transition: 0.4s;
+}
+
+.bottom-segment{
+  background-color: #414440;
+  color: lightgrey;
+  height: 60px;
+  width: 100%;
+}
+
+.credits{
+  position: absolute;
+  right: 0;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.introduction{
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  color: white;
+}
+
+.introduction-title{
+  font-weight: 500;
+  font-size: 30px;
+}
+
+</style>
+
+
+<div class="normal-background">
+  <div>
+    <%= image_tag '/assets/Pill2.png', class: 'title-image' %>
+  </div>
+  <div class="introduction">
+    <div class="introduction-title">
+      Welcome to MediKT
+    </div>
+    <div>
+      <div>Best web application to manage your treatments and health needs</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-2 col-md-2">
+    </div>
+    <div class="col-lg-8 col-md-8">
+      <div class="row square">
+        <div class="col-lg-12 col-md-12">
+          <div id="title">
+            Login
+          </div>
+          <div style="margin-top:15px;">
+            <form>
+              <div class="row">
+                <div class="">  
+                  <label class="session-input-field">Username:</label>
+                </div>
+                <div class=""> 
+                  <input type="text" class="session-input"><div class="icon-holder" style="padding-right: 6px;"><i class="fa fa-user"></i></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class=""> 
+                  <label class="session-input-field">Password:</label>
+                </div>
+                <div class=""> 
+                  <input type="text" class="session-input"><div class="icon-holder"><i class="fa fa-key"></i></div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div>
+            <button class="form-button enter-button">Sign In</button>
+          </div>
+
+          <div style="margin-top: 20px;margin-bottom: -10px;">
+            Don't have an account yet?
+          </div>
+          <div>
+            <button class="form-button crear-button">Sign Up</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-segment">
+    <div class="credits">
+      Application made by Andie Pérez
+    </div>
+  </div>
+</div>
