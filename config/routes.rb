@@ -4,6 +4,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  get "sessions/iniciar_sesion"
+  root to: redirect('sessions/sign_in')
+
+  get "sessions/sign_in"
+  get "sessions/create_account"
+  post "sessions/create_session"
+  post "sessions/create_user"
 
 end
