@@ -120,10 +120,12 @@
 
 </style>
 
-
 <div class="normal-background">
+
   <div>
-    <%= image_tag '/assets/Pill2.png', class: 'title-image' %>
+    <%= link_to sessions_sign_in_path do %>
+      <%= image_tag '/assets/Pill2.png', class: "title-image" %>
+    <% end %>
   </div>
   <div class="introduction">
     <div class="introduction-title">
@@ -177,6 +179,13 @@
             <% end %>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-2">
+            <%= button_to sessions_sign_in_path, method: :get, class: "form-button" do %>
+              <%= content_tag :i, "", class: "fa fa-arrow-left" %>
+            <% end %>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -186,5 +195,17 @@
     </div>
   </div>
 </div>
+
+<script>
+
+console.log("loaded script")
+
+window.onload = function() {
+  console.log("loaded event")
+  var targetElement = document.getElementById('title');
+  targetElement.scrollIntoView();
+};
+
+</script>
 
 

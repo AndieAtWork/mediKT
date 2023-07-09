@@ -118,6 +118,28 @@
   font-size: 30px;
 }
 
+.bottom-image-container{
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.bottom-image{
+  width: 100%;
+}
+
+.session-quote-container{
+  display: flex;
+  justify-content: center;
+}
+
+.session-quote{
+  width: 90%;
+  text-align: center;
+}
+
 </style>
 
 <div class="normal-background">
@@ -171,10 +193,25 @@
           <div style="margin-top: 20px;margin-bottom: -10px;">
             Don't have an account yet?
           </div>
+          
           <div>
-            <%= button_to 'Sign Up', sessions_create_account_path, method: :get, class: "form-button crear-button" %>
+            <button type="button" class="form-button crear-button" onclick="location.href='./create_account'">Sign Up</button>
           </div>
 
+          <div class="bottom-image-container">
+            <%= image_tag '/assets/medicines-transparent-session.png', class: "bottom-image" %>
+          </div>
+
+          <div class="session-quote-container">
+            <div class="session-quote">
+              <p class="fst-italic">"Medication is not just about treating diseases; it is about empowering individuals to regain control over their health and reclaim their lives."</p>
+            </div>
+          </div>
+          <div>
+            <div class="session-quote"> 
+              <p>- Dr. Siddhartha Mukherjee</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

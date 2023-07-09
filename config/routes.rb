@@ -11,4 +11,7 @@ Rails.application.routes.draw do
   post "sessions/create_session"
   post "sessions/create_user"
 
+  get "homepage/home"
+  get "home" => "homepage#home", :as => "home"
+
 end

@@ -1,6 +1,9 @@
 class SessionsController < ApplicationController
 
   def sign_in
+    if false
+      redirect_to controller: :homepage, action: :home
+    end
   end
 
   def create_account
