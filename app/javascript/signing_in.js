@@ -1,1 +1,1 @@
-console.log("Signing in validator is running")
+console.log("Signing in validator is running!")
