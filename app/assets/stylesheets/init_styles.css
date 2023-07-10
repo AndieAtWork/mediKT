@@ -1,0 +1,149 @@
+.square{
+  background-color: white;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 50px;
+}
+
+#title{
+  text-align: center;
+  color: #098484;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.session-input{
+  border-color: #0CB8B8;
+  border-radius: 7px;
+  z-index: 100;
+  position: relative;
+  width: 96%;
+}
+
+.session-input-field{
+  color: #098484;
+}
+
+.icon-holder{
+  display: inline;
+  border: 1px solid black;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: -9px;
+  background-color: #0CB8B8;
+  color: white;
+  border-radius: 7px;
+}
+
+.key-holder{
+  padding-right: 4px;
+  padding-left: 13px;
+}
+
+.user-holder{
+  padding-right: 6px;
+  padding-left: 13px;
+}
+
+@media (max-width: 1010px) {
+  .icon-holder{
+    display: none;
+  }
+  .session-input{
+    width: 100%;
+  }
+}
+
+.title-image{
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  margin-top: 30px;
+}
+
+.form-button{
+  margin-top: 20px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.enter-button{
+  background-color: #0CB8B8;
+  color: white;
+}
+
+.enter-button:hover{
+  background-color: #098484;
+  color: white;
+  transition: 0.4s;
+}
+
+.crear-button{
+  background-color: #CD3301;
+  color: white;
+}
+
+.crear-button:hover{
+  background-color: #9A2701;
+  color: white;
+  transition: 0.4s;
+}
+
+.bottom-segment{
+  background-color: #414440;
+  color: lightgrey;
+  height: 60px;
+  width: 100%;
+}
+
+.credits{
+  position: absolute;
+  right: 0;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.introduction{
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  color: white;
+}
+
+.introduction-title{
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.back-button{
+  background-color: F0F0F0;
+  color: black;
+}
+
+.back-button:hover{
+  background-color: #414141;
+  color: lightgray;
+}
+
+.bottom-image-container{
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.bottom-image{
+width: 100%;
+}
+
+.session-quote-container{
+display: flex;
+justify-content: center;
+}
+
+.session-quote{
+width: 90%;
+text-align: center;
+}
