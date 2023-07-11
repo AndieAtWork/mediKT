@@ -80,12 +80,12 @@
 }
 
 .crear-button{
-  background-color: #CD3301;
+  background-color: #F4AA49;
   color: white;
 }
 
 .crear-button:hover{
-  background-color: #9A2701;
+  background-color: #E07F00;
   color: white;
   transition: 0.4s;
 }

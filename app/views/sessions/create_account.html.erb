@@ -31,7 +31,9 @@
                   <%= form.label :username, class: "session-input-field" %>
                 </div>
                 <div> 
-                  <%= form.text_field :username, class: "session-input" %><div class="icon-holder user-holder"><i class="fa fa-user"></i></div>
+                  <%= form.text_field :username, id:"input1", class: "session-input form-control-validated" %><div class="icon-holder user-holder"><i class="fa fa-user"></i></div>
+                  <div class="valid-feedback"></div>
+                  <div class="invalid-feedback" id="input1-error">Enter a password.</div>
                 </div>
               </div>
               <div class="row">
@@ -39,7 +41,9 @@
                   <%= form.label :password, class: "session-input-field" %>
                 </div>
                 <div> 
-                  <%= form.password_field :password, class: "session-input" %><div class="icon-holder key-holder"><i class="fa fa-key"></i></div>
+                  <%= form.password_field :password, id:"input2", class: "session-input form-control-validated" %><div class="icon-holder key-holder"><i class="fa fa-key"></i></div>
+                  <div class="valid-feedback"></div>
+                  <div class="invalid-feedback" id="input2-error">Enter a password.</div>
                 </div>
               </div>
               <div class="row">
@@ -47,7 +51,9 @@
                   <%= form.label :confirm, "Confirm Password", class: "session-input-field" %>
                 </div>
                 <div> 
-                  <%= form.password_field :confirm, class: "session-input" %><div class="icon-holder key-holder"><i class="fa fa-key"></i></div>
+                  <%= form.password_field :confirm, id:"input3", class: "session-input form-control-validated" %><div class="icon-holder key-holder"><i class="fa fa-key"></i></div>
+                  <div class="valid-feedback"></div>
+                  <div class="invalid-feedback" id="input3-error">Enter a password.</div>
                 </div>
               </div>
               <div class="row">
@@ -83,5 +89,8 @@ window.onload = function() {
 };
 
 </script>
+
+<%= javascript_include_tag 'custom_validator' %>
+<%= javascript_include_tag 'signing_in' %>
 
 

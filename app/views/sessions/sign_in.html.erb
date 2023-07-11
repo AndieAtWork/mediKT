@@ -29,7 +29,9 @@
                   <%= form.label :username, class: "session-input-field" %>
                 </div>
                 <div> 
-                  <%= form.text_field :username, class: "session-input" %><div class="icon-holder user-holder"><i class="fa fa-user"></i></div>
+                  <%= form.text_field :username, required: true, class: "session-input" %><div class="icon-holder user-holder"><i class="fa fa-user"></i></div>
+                  <div class="valid-feedback"></div>
+                  <div class="invalid-feedback">Enter a username.</div>
                 </div>
               </div>
               <div class="row">
@@ -38,6 +40,8 @@
                 </div>
                 <div> 
                   <%= form.password_field :password, class: "session-input" %><div class="icon-holder key-holder"><i class="fa fa-key"></i></div>
+                  <div class="valid-feedback"></div>
+                  <div class="invalid-feedback">Enter a password.</div>
                 </div>
               </div>
               <div class="row">
@@ -82,5 +86,5 @@
 </div>
 
 
-
-
+<%= javascript_include_tag 'custom_validator' %>
+<%= javascript_include_tag 'signing_in' %>
